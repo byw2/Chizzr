@@ -113,7 +113,7 @@ function setupSquares() {
 				h1.style.backgroundColor = clickedColor;
 				resetButton.textContent = 'Play again?';
 			} else {
-				messageDisplay.textContent = 'Incorrect. Try again.';
+				messageDisplay.textContent = 'Try again.';
 				this.style.backgroundColor = '#232323';
 				this.textContent = '';
 			}
