@@ -84,3 +84,15 @@ button:hover {
 	color: white;
 	text-align: center;
 }
+
+#logo {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	opacity: 80%;
+}
+
+#logo:hover {
+	transform: scale(1.05);
+	transition: transform .3s ease-in-out;
+}
