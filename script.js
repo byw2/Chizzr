@@ -81,6 +81,7 @@ var modeButtons = document.querySelectorAll('.mode');
 var h1 = document.querySelector('h1');
 var pre = document.querySelector('#pre');
 var post = document.querySelector('#post');
+var eDisplay;
 
 init();
 
@@ -114,9 +115,9 @@ function setupSquares() {
 				changeColorsAndText(clickedColor, this.textContent);
 				h1.style.backgroundColor = clickedColor;
 				resetButton.textContent = 'Play again?';
-				// pre.textContent = 'The character';
-				// post.textContent = 'means ' + engDisplay.textContent;
-				// engDisplay.textContent = terms[pickedWord];
+				pre.textContent = eDisplay + ' is';
+				engDisplay.textContent = terms[pickedWord];
+				post.textContent = 'in Chinese';
 			} else {
 				messageDisplay.textContent = 'Try again.';
 				this.style.backgroundColor = '#232323';
@@ -136,6 +137,7 @@ function reset() {
 	// pick a random word
 	pickedWord = pickWord();
 	engDisplay.textContent = pickedWord; // will implement later using Python
+	eDisplay = engDisplay.textContent;
 	resetButton.textContent = 'New Word';
 	// change colors of squares
 	for (var i = 0; i < squares.length; i++) {
@@ -149,8 +151,8 @@ function reset() {
 	}
 
 	h1.style.backgroundColor = 'steelblue';
-	// pre.textContent = 'What is';
-	// post.textContent = 'in Chinese?';
+	pre.textContent = 'What is';
+	post.textContent = 'in Chinese?';
 	messageDisplay.textContent = '';
 }
 
