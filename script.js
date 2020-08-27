@@ -79,6 +79,8 @@ var resetButton = document.querySelector('#reset');
 var squares = document.querySelectorAll('.square');
 var modeButtons = document.querySelectorAll('.mode');
 var h1 = document.querySelector('h1');
+var pre = document.querySelector('#pre');
+var post = document.querySelector('#post');
 
 init();
 
@@ -112,6 +114,9 @@ function setupSquares() {
 				changeColorsAndText(clickedColor, this.textContent);
 				h1.style.backgroundColor = clickedColor;
 				resetButton.textContent = 'Play again?';
+				// pre.textContent = 'The character';
+				// post.textContent = 'means ' + engDisplay.textContent;
+				engDisplay.textContent = terms[pickedWord];
 			} else {
 				messageDisplay.textContent = 'Try again.';
 				this.style.backgroundColor = '#232323';
@@ -144,7 +149,8 @@ function reset() {
 	}
 
 	h1.style.backgroundColor = 'steelblue';
-
+	// pre.textContent = 'What is';
+	// post.textContent = 'in Chinese?';
 	messageDisplay.textContent = '';
 }
 
