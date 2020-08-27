@@ -116,7 +116,7 @@ function setupSquares() {
 				resetButton.textContent = 'Play again?';
 				// pre.textContent = 'The character';
 				// post.textContent = 'means ' + engDisplay.textContent;
-				engDisplay.textContent = terms[pickedWord];
+				// engDisplay.textContent = terms[pickedWord];
 			} else {
 				messageDisplay.textContent = 'Try again.';
 				this.style.backgroundColor = '#232323';
