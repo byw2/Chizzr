@@ -114,7 +114,7 @@ button:hover {
 		margin: 2vw;
 		float: none;
 		display: inline-block !important;
-		vertical-align: middle;
+		vertical-align: bottom;
 	}
 	.container {
 		text-align: center;
