@@ -87,7 +87,7 @@ button:hover {
 }
 
 #logo {
-	position: absolute;
+	position: fixed;
 	bottom: .8rem;
 	right: .8rem;
 	opacity: 80%;
@@ -101,9 +101,6 @@ button:hover {
 @media all and (max-width: 700px) {
 	h1 {
 		font-size: 5vw;
-	}
-	#message {
-		width: 30%;
 	}
 	.mode,
 	#reset,
