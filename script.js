@@ -201,14 +201,14 @@ function reset() {
 	// change colors of squares
 	for (var i = 0; i < squares.length; i++) {
 		if (colors[i] && words[i]) {
-			squares[i].style.display = 'inline-block !important';
+			console.log('hi');
+			squares[i].style.display = 'inline-block';
 			squares[i].style.backgroundColor = colors[i];
 			squares[i].textContent = terms[words[i]];
 		} else {
 			squares[i].style.display = 'none';
 		}
 	}
-
 	h1.style.backgroundColor = 'steelblue';
 	pre.textContent = 'What is';
 	post.textContent = 'in Chinese?';
